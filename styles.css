@@ -1,0 +1,188 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #005baa;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f0f0f0;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #005baa;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.hero-images {
+    position: relative;
+    width: 100%;
+}
+
+.hero-images .hero-image {
+    position: absolute;
+    bottom: 0;
+    top: -10vh;
+    right: 10vw;
+    width: 80%;
+    z-index: 2;
+}
+
+.hero-images .hero-background {
+    position: absolute;
+    top: -18vh;
+    left: 30.85vw;
+    width: 10%;
+    z-index: 1;
+}
+
+.courses {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses ul li {
+    padding: 10px 0;
+}
+
+
+/* Contêiner da seção de contato */
+.contact {
+    padding: 50px 20px;
+    background: #f0f0f0;
+}
+
+/* Grade da seção de contato */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Itens individuais da seção de contato */
+.contact-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem dentro da seção de contato */
+.contact-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .courses {
+        text-align: left;
+    }
+
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .hero-images .hero-image {
+        width: 40%;
+    }
+
+    .hero-images .hero-background {
+        width: 50%;
+    }
+}
+
